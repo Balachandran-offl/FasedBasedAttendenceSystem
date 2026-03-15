@@ -2,3 +2,5 @@ py-backend/venv/
 venu/
 node_modules/
 .env
+__pycache__/
+*.pyc
