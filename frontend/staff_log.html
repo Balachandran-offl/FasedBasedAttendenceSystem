@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staff Login | Face Attendance System</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="form-box">
+            <div class="header">
+                <h2>Staff Login</h2>
+                <p>Access the management dashboard and attendance reports.</p>
+            </div>
+            
+            <form id="staffLoginForm">
+                <div class="input-group">
+                    <label for="staffEmail">Official Email</label>
+                    <input type="email" id="staffEmail" placeholder="staff@university.edu" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="staffPass">Password</label>
+                    <input type="password" id="staffPass" placeholder="Enter your password" required>
+                </div>
+
+                <button type="submit" class="btn btn-staff">Login to Dashboard</button>
+            </form>
+
+            <div class="switch">
+                Need a staff account? <a href="staff_reg.html">Register here</a><br>
+                <a href="index.html" class="back-link">← Return to Main Portal</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/staff_log.js"></script>
+</body>
+</html>

@@ -1,0 +1,144 @@
+:root {
+    --bg-body: #f8f9fc;
+    --sidebar-text: #5a5c69;
+    --primary-blue: #4e73df;
+    --success-green: #1cc88a;
+    --danger-red: #e74a3b;
+    --white: #ffffff;
+    --border-soft: #eaecf4;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+    font-family: 'Nunito', sans-serif;
+    background-color: var(--bg-body);
+    display: flex;
+}
+
+/* Sidebar Navigation */
+.sidebar {
+    width: 240px;
+    height: 100vh;
+    background: var(--white);
+    border-right: 1px solid var(--border-soft);
+    padding: 1.5rem 1rem;
+    position: fixed;
+    z-index: 100;
+}
+
+.brand {
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: var(--primary-blue);
+    margin-bottom: 2.5rem;
+    padding-left: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    padding: 0.85rem 1rem;
+    color: var(--sidebar-text);
+    text-decoration: none;
+    border-radius: 10px;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+    font-size: 0.9rem;
+    transition: 0.2s;
+}
+
+.nav-item.active {
+    background-color: #f0f3ff;
+    color: var(--primary-blue);
+}
+
+.nav-item:hover:not(.active) {
+    background-color: #f8f9fc;
+    color: var(--text-dark);
+}
+
+/* Main Content */
+.main-content {
+    margin-left: 240px;
+    width: calc(100% - 240px);
+    padding: 2.5rem;
+}
+
+.header-title {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #4e4e4e;
+    margin-bottom: 1.5rem;
+}
+
+/* Stats Row */
+.stats-container {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.stat-card {
+    background: var(--white);
+    flex: 1;
+    padding: 1.5rem;
+    border-radius: 12px;
+    border-left: 4px solid var(--primary-blue);
+    box-shadow: 0 0.15rem 1.75rem 0 rgba(58, 59, 69, 0.1);
+}
+
+.stat-label {
+    font-size: 0.7rem;
+    font-weight: 800;
+    color: var(--primary-blue);
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.stat-value {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #5a5c69;
+}
+
+/* Action Card (Upload) */
+.action-card {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 15px;
+    border: 1px solid var(--border-soft);
+    box-shadow: 0 0.15rem 1.75rem 0 rgba(58, 59, 69, 0.05);
+}
+
+.upload-box {
+    border: 2px dashed #d1d3e2;
+    padding: 2.5rem;
+    text-align: center;
+    border-radius: 12px;
+    margin: 1.5rem 0;
+    background: #fcfcfd;
+}
+
+.btn-upload {
+    background: var(--primary-blue);
+    color: white;
+    padding: 12px 25px;
+    border-radius: 8px;
+    border: none;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-upload:hover {
+    background: #2e59d9;
+}
+
+.feedback-msg {
+    margin-top: 1rem;
+    font-weight: 700;
+    font-size: 0.9rem;
+}

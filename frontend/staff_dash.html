@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staff Dashboard - Identity Verification</title>
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="sidebar">
+        <div class="brand">ATS STAFF</div>
+        
+        <a href="#" class="nav-item active" id="btn-verify-nav">
+            <i class="fas fa-user-check" style="margin-right: 10px;"></i>
+            Verify Image
+        </a>
+        
+        <a href="#" class="nav-item">
+            <i class="fas fa-list-alt" style="margin-right: 10px;"></i>
+            Student List
+        </a>
+
+        <div style="position: absolute; bottom: 2rem; width: calc(100% - 2rem);">
+            <a href="/logout" class="nav-item" style="color: var(--danger-red);">
+                <i class="fas fa-sign-out-alt" style="margin-right: 10px;"></i>
+                Logout
+            </a>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <h1 class="header-title">Image Verification Queue</h1>
+
+        <div class="stats-container">
+            <div class="stat-card">
+                <div class="stat-label">Pending Reviews</div>
+                <div class="stat-value" id="pending-count">0</div>
+            </div>
+            <div class="stat-card" style="border-left-color: var(--success-green);">
+                <div class="stat-label" style="color: var(--success-green);">Total Approved</div>
+                <div class="stat-value" id="approved-count">0</div> 
+            </div>
+        </div>
+
+        <div class="action-card">
+            <div class="feedback-msg" style="color: var(--sidebar-text); margin-bottom: 1.5rem;">
+                Review the following student profile photos. These have passed RetinaFace quality checks.
+            </div>
+
+            <div id="student-image-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 20px;"></div>
+        </div>
+    </div>
+    <script src="js/staff_dash.js"></script>
+</body>
+</html>

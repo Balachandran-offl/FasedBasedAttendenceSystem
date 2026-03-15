@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard | Attendance System</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body>
+
+    <aside class="sidebar">
+        <div class="brand">ATS System</div>
+        <nav>
+            <a href="#" class="nav-item active">Dashboard</a>
+            <a href="#" class="nav-item">Attendance History</a>
+            <a href="#" class="nav-item">Profile Settings</a>
+            <a href="javascript:void(0)" id="logoutBtn" class="nav-item" style="color: var(--danger-red); margin-top: 50px;">
+                Logout
+            </a>
+        </nav>
+    </aside>
+
+    <main class="main-content">
+        <header>
+            <h2 class="header-title">Dashboard Overview</h2>
+        </header>
+
+        <div class="stats-container">
+            <div id="uploadStatusBox" class="stat-card" style="border-left-color: #858796;">
+                <div class="stat-label">Submission Status</div>
+                <div id="uploadStatusText" class="stat-value" style="font-size: 1.2rem; color: #858796;">
+                    Image Not Uploaded
+                </div>
+            </div>
+
+            <div id="verifyStatusBox" class="stat-card" style="border-left-color: var(--danger-red);">
+                <div class="stat-label">Image Verification Status</div>
+                <div id="verifyStatusText" class="stat-value" style="font-size: 1.2rem; color: var(--danger-red);">
+                    Not Verified
+                </div>
+            </div>
+        </div>
+
+        <div class="action-card">
+            <h3 style="color: #4e73df;">Student Identity Verification</h3>
+            <p style="color: #858796; font-size: 0.9rem; margin-top: 5px;">
+                Please upload a formal photo. System strictly prohibits <strong>.txt, .ppt, or .pdf</strong> files.
+            </p>
+
+            <div class="upload-box">
+                <input type="file" id="studentPhoto" accept="image/png, image/jpeg" hidden>
+                
+                <div id="previewContainer" style="display: none; margin-bottom: 15px;">
+                    <img id="imagePreview" src="" alt="Profile Preview" style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover; border: 3px solid #4e73df;">
+                </div>
+
+                <button type="button" id="uploadTriggerBtn" class="btn-upload">
+                    Choose Photo
+                </button>
+
+                <div id="fileSelectedName" style="margin-top: 15px; color: #5a5c69; font-weight: 600;"></div>
+                
+                <button type="button" id="analyzeBtn" class="btn-upload" style="margin-top: 12px;" disabled>
+                    Analyze Photo
+                </button>
+            </div>
+
+            <div id="statusFeedback" class="feedback-msg"></div>
+        </div>
+    </main>
+
+    <script src="js/student_dash.js"></script>
+</body>
+</html>

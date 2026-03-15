@@ -1,0 +1,135 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f7f9; /* Very light blue-grey background */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+}
+
+/* Main Container for the Form */
+.container {
+    width: 100%;
+    max-width: 420px;
+    padding: 20px;
+}
+
+/* The Curved White Box */
+.form-box {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 24px; /* Smooth, modern curves */
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05); /* Soft shadow for depth */
+    text-align: center;
+    border: 1px solid #e0e6ed;
+}
+
+/* Typography */
+h2 {
+    color: #1a73e8; /* Formal Blue */
+    font-size: 26px;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+p {
+    color: #70757a;
+    font-size: 14px;
+    margin-bottom: 30px;
+    line-height: 1.4;
+}
+
+/* Input Grouping */
+.input-group {
+    text-align: left;
+    margin-bottom: 18px;
+}
+
+label {
+    display: block;
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: #4a4a4a;
+    margin-left: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 14px 16px;
+    font-size: 15px;
+    border: 2px solid #e8eaed;
+    border-radius: 12px; /* Curved input fields */
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+/* Input Focus Effect */
+input:focus {
+    border-color: #1a73e8;
+    background-color: #f8fbff;
+}
+
+/* Buttons */
+.btn {
+    width: 100%;
+    padding: 15px;
+    background-color: #1a73e8;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.1s;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background-color: #1557b0;
+}
+
+.btn:active {
+    transform: scale(0.98);
+}
+
+/* Staff Specific Button Color */
+.btn-staff {
+    background-color: #0d47a1;
+}
+
+.btn-staff:hover {
+    background-color: #0a3a82;
+}
+
+/* Footer Links */
+.switch {
+    margin-top: 25px;
+    font-size: 14px;
+    color: #5f6368;
+}
+
+.switch a {
+    color: #1a73e8;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.switch a:hover {
+    text-decoration: underline;
+}
+
+.back-link {
+    display: inline-block;
+    margin-top: 15px;
+    font-size: 12px;
+    color: #9aa0a6 !important;
+}

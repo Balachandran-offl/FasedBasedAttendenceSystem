@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Login | Face Attendance System</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="form-box">
+            <div class="header">
+                <h2>Student Login</h2>
+                <p>Verify your identity to mark attendance.</p>
+            </div>
+            
+            <form id="studentLoginForm">
+                <div class="input-group">
+                    <label for="studentEmail">Email Address</label>
+                    <input type="email" id="studentEmail" placeholder="Enter your email" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="studentPass">Password</label>
+                    <input type="password" id="studentPass" placeholder="Enter your password" required>
+                </div>
+
+                <button type="submit" class="btn">Login</button>
+            </form>
+
+            <div class="switch">
+                New student? <a href="student_reg.html">Create an account</a><br>
+                <a href="index.html" class="back-link">← Back to Portal Selection</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/student_log.js"></script>
+</body>
+</html>

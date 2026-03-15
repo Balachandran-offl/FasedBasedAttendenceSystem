@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration | Attendance System</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="form-box">
+            <h2>Student Registration</h2>
+            <p>Please enter your details to register for the Face Attendance System.</p>
+            
+            <form id="studentRegForm">
+                <div class="input-group">
+                    <label>Full Name</label>
+                    <input type="text" id="studentName" placeholder="e.g. John Doe" required>
+                </div>
+
+                <div class="input-group">
+                    <label>Email Address</label>
+                    <input type="email" id="studentEmail" placeholder="name@university.edu" required>
+                </div>
+
+                <div class="input-group">
+                    <label>Password</label>
+                    <input type="password" id="studentPass" placeholder="••••••••" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="studentConfirmPass">Confirm Password</label>
+                    <input type="password" id="studentConfirmPass" placeholder="••••••••" required>
+                </div>
+
+                <button type="submit" class="btn">Register Student</button>
+            </form>
+
+            <div class="switch">
+                Already registered? <a href="student_login.html">Login here</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/student_reg.js"></script>
+</body>
+</html>

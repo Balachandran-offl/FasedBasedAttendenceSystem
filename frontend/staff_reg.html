@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staff Registration | Attendance System</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="form-box">
+            <div class="header">
+                <h2>Staff Registration</h2>
+                <p>Register your official account to manage classroom attendance.</p>
+            </div>
+            
+            <form id="staffRegForm">
+                <div class="input-group">
+                    <label for="staffName">Full Name</label>
+                    <input type="text" id="staffName" placeholder="e.g. Prof. Smith" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="staffEmail">Official Email</label>
+                    <input type="email" id="staffEmail" placeholder="staff@university.edu" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="staffPass">Password</label>
+                    <input type="password" id="staffPass" placeholder="Create a strong password" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="staffConfirmPass">Confirm Password</label>
+                    <input type="password" id="staffConfirmPass" placeholder="Re-enter password" required>
+                </div>
+                <button type="submit" class="btn btn-staff">Create Staff Account</button>
+            </form>
+
+            <div class="switch">
+                Already have a staff account? <a href="staff_log.html">Login here</a><br>
+                <a href="index.html" class="back-link">← Portal Selection</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/staff_reg.js"></script>
+</body>
+</html>
